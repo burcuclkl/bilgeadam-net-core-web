@@ -16,6 +16,7 @@ namespace Restaurant
             CreateHostBuilder(args).Build().Run();
         }
 
+        //örnek deðiþiklil
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
