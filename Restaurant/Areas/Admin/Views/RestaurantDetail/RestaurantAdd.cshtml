@@ -1,0 +1,27 @@
+﻿@model Restaurant.Models.ORM.Entities.RestaurantBase
+@{
+    ViewData["Title"] = "RestaurantAddBase";
+}
+
+<h1>RestaurantAdd</h1>
+
+<div class="row" style="margin-top: 50px;">
+
+    <form method="post" asp-controller="RestaurantDetailController" asp-action="RestaurantAdd">
+        <label>Restaurant Adı</label><br />
+        <input tpye="text" asp-for="RestaurantName" class="form-control" style="min-width: 100%" /><br />
+
+        <label>Restaurant Adres</label><br />
+        <input tpye="text" asp-for="RestaurantAddress" class="form-control" style="min-width: 100%" /><br />
+
+        <label>Restaurant Menü</label><br />
+        <input tpye="text" asp-for="RestaurantMenu" class="form-control" style="min-width: 100%" /><br />
+
+        <label>Restaurant Kuruluş Tarihi</label><br />
+        <input tpye="text" asp-for="Date" class="form-control" style="min-width: 100%" /><br />
+
+        <input type="submit" value="Restaurant Ekle" class="btn btn-success" />
+    </form>
+
+
+</div>
